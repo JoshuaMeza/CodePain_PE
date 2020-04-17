@@ -1,4 +1,4 @@
-# Programacion Estructurada
+# Programación Estructurada
 Repositorio de programación estructurada 2020 :computer:
 
 Dr. Edgar Cambranes Martínez :space_invader:
