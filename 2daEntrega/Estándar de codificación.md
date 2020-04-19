@@ -64,8 +64,8 @@ def main():
         numberOne (int): First Number
         numberTwo (int): Second Number
     """
-    numberOne=readNumber
-    numberTwo=readNumber
+    numberOne=readNumber()
+    numberTwo=readNumber()
 
     #Process
     """
