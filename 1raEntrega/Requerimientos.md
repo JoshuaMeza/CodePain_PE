@@ -8,6 +8,7 @@
 ## Requerimientos de Usuario
 
 El usuario ingresa a una interfaz dónde están enlistados todos los países que se pueden consultar. Al seleccionar uno se le presentan los datos, las gráficas y las ecuaciones logarítmicas correspondientes.
+
 Si el usuario lo requiere, puede regresar a la página principal presionando un botón.
 
 ## Requerimientos de Sistema
@@ -33,12 +34,14 @@ El usuario ingresa el país que desea consultar, después el sistema lo traduce 
 
 ## Diagrama de Casos de Uso
 
-https://github.com/JoshuaMeza/CodePain_PE/tree/master/Recursos/DiagramaCasosDeUso.jpg
+![image](https://github.com/JoshuaMeza/CodePain_PE/tree/master/Recursos/DiagramaCasosDeUso.jpg)
 
 En la imagen se presenta cómo el usuario es necesario para que el sistema sepa a que ruta acceder y recoger la información, para que posteriormente él la analice, la transfiera a tablas y la devuelva en una forma sencilla de entender para el usuario.
 
 ## Entidades de Información Necesarias
 
 El sistema necesitará de la biblioteca *requests* para obtener información de la API (Application Programming Interface) de la OMS (Organización Mundial de la Salud).
+
 Para las tablas, el sistema utilizará la biblioteca *_________________________*.
+
 Para la documentación, se necesitará de la biblioteca *pydoc*.

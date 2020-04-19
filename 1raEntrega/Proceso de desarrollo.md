@@ -25,7 +25,9 @@ Se realizan llamadas grupales semanales para comentar las próximas metas a logr
 ### Monitoreo
 
 Cada integrante avisa de su desempeño a los demás, marca su casilla en el mapeo de requerimientos y redacta los avances obtenidos hasta ese momento. 
+
 Tras cada prototipo lanzado se realizan las pruebas y se documentan en el código. 
+
 Es indispensable que todo el equipo analice el avance de los demás en busca de errores, desperfectos u optimizaciones que se puedan realizar, con el fin de mantener un buen standar de calidad. 
 
 ### Bitácoras
@@ -48,4 +50,4 @@ Insert Info Here!!!
 
 ## Repositorio
 
--[x] https://github.com/JoshuaMeza/CodePain_PE
+- [x] https://github.com/JoshuaMeza/CodePain_PE
