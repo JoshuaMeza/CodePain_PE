@@ -34,7 +34,7 @@ El usuario ingresa el país que desea consultar, después el sistema lo traduce 
 
 ## Diagrama de Casos de Uso
 
-![image](https://github.com/JoshuaMeza/CodePain_PE/tree/master/Recursos/DiagramaCasosDeUso.jpg)
+https://github.com/JoshuaMeza/CodePain_PE/tree/master/Recursos/DiagramaCasosDeUso.jpg
 
 En la imagen se presenta cómo el usuario es necesario para que el sistema sepa a que ruta acceder y recoger la información, para que posteriormente él la analice, la transfiera a tablas y la devuelva en una forma sencilla de entender para el usuario.
 
