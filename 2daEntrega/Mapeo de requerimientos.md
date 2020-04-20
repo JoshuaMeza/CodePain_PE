@@ -3,7 +3,7 @@
 ## Requerimientos Funcionales
 
 - [x] El usuario puede elegir el país que desea consultar.
-- [] El usuario puede volver a la página principal tras realizar una consulta.
+- [ ] El usuario puede volver a la página principal tras realizar una consulta.
 
 ## Requerimientos No funcionales
 
