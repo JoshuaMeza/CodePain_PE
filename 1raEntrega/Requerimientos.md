@@ -2,7 +2,7 @@
 
 ## Actores del Sistema
 
-- **Usuario:** Viene siendo cualquier persona que quiera ver la situación actual en cuanto a casos confirmados y defunciones por Covid-19 de algún país en América.
+- **Usuario:** Viene siendo cualquier persona que quiera ver la situación actual en cuanto a casos confirmados y defunciones por Covid-19 de algún país en Norte América.
 - **Sistema:** El sistema mismo.
 
 ## Requerimientos de Usuario
@@ -13,16 +13,16 @@ Si el usuario lo requiere, puede regresar a la página principal presionando un 
 
 ## Requerimientos de Sistema
 
-El usuario ingresa el país que desea consultar, después el sistema lo traduce al código asociado a la API (Application Programming Interface) de la OMS (Organización Mundial de la Salud) y extrae los datos de casos confirmados y defunciones por Covid-19, posteriormente, convierte los datos en tablas y los utiliza para crear una ecuación logarítmica que describa el cambio en dicha información. Por último, presenta los resultados al usuario. 
+El usuario ingresa el país que desea consultar, después el sistema lo traduce al código asociado a una API (Application Programming Interface) y extrae los datos de casos confirmados y defunciones por Covid-19, posteriormente, convierte los datos en gráficas y los utiliza para crear una ecuación logarítmica que describa el cambio en dicha información. Por último, presenta los resultados al usuario. 
 
 ## Requerimientos Funcionales
 
-- El usuario puede elegir el país que desea consultar
-- El usuario puede volver a la página principal desde una consulta
+- El usuario puede elegir el país que desea consultar.
+- El usuario puede volver a la página principal desde una consulta.
 
 ## Requerimientos No funcionales
 
-- Al ingresar, el sistema despliega la lista de países que se pueden consultar
+- Al ingresar, el sistema despliega la lista de países que se pueden consultar.
 - Al seleccionar un país, el sistema:
     - Despliega una tabla con los números de casos confirmados de Covid-19 a través del tiempo.
     - Pone el número de casos confirmados totales de Covid-19 hasta la fecha.
@@ -40,8 +40,8 @@ En la imagen se presenta cómo el usuario es necesario para que el sistema sepa 
 
 ## Entidades de Información Necesarias
 
-El sistema necesitará de la biblioteca *requests* para obtener información de la API (Application Programming Interface) de la OMS (Organización Mundial de la Salud).
+El sistema utiliza las bibliotecas *http.client* y *json* para obtener los casos confirmados y las defunciones totales, recuperadas de la API (Application Programming Interface) *[COVID-19](https://rapidapi.com/api-sports/api/covid-193?endpoint=apiendpoint_dfb9e52d-bd90-48ec-a571-8b78610a736d)* de api-sports.
 
 Para las tablas, el sistema utilizará la biblioteca *_________________________*.
 
-Para la documentación, se necesitará de la biblioteca *pydoc*.
+Para la documentación, se utiliza la biblioteca *pydoc*.
