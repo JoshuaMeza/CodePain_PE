@@ -6,7 +6,7 @@ El miércoles 11 de Marzo el director de la Organización Mundial de la Salud (O
 
 ## Objetivo
 
-Desarrollar un sistema donde el usuario pueda consultar, mediante gráficos, el número de casos confirmados de Covid-19 y sus defunciones resultantes ocurridas en países del continente americano. También le proporcionará al usuario las ecuaciones logarítmicas que describan el crecimiento de casos y defunciones.
+Desarrollar un sistema donde el usuario pueda consultar, mediante gráficos, el número de casos confirmados de Covid-19 y sus defunciones resultantes ocurridas en países de Norte América. También le proporcionará al usuario las ecuaciones logarítmicas que describan el crecimiento de casos y defunciones.
 
 ## Población objetivo
 
