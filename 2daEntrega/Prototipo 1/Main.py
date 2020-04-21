@@ -6,6 +6,7 @@ total numbers and the logarithmic ecuations that represents the increase of case
 """
 import http.client 
 import json
+from matplotlib import pyplot
 
 #Functions
 def askCountry():
@@ -106,6 +107,24 @@ def getDeaths(_code):
     
     return _totalDeaths
 
+
+def graphic(total,deaths):
+    parts = ('Cases','Deaths')
+    slices = (total, deaths)
+    colors = ('green', 'red')
+    values = (0.1, 0)
+    pyplot.rcParams['toolbar'] = 'None'
+    
+    _, _, text = pyplot.pie(slices, colors = colors, labels = parts, autopct='%1.1f%%', explode=values, startangle = 90)
+    
+    for tex in text:
+        tex.set_color('white')
+    
+    pyplot.axis('equal')
+    pyplot.title('Graph of the data collected from the country')
+    pyplot.show()
+    
+    
 def main():
     #Input
     """
@@ -121,6 +140,8 @@ def main():
     code=askCountry()
     totalCases.extend(getCases(code))
     totalDeaths.extend(getDeaths(code))
+    total = totalCases[0]
+    deaths = totalDeaths[0]
 
     #Process
     """
@@ -128,6 +149,7 @@ def main():
     Args:
         ... (...): ...
     """
+    graphic(total, deaths)
 
 
     #Output
