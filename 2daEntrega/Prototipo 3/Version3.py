@@ -286,11 +286,11 @@ def graphic2(A, B, C, D):
     v = [-25, 25, 0, 25]
     x =np.linspace(-25,25,100)
     pyplot.rcParams['toolbar'] = 'None'
-    pyplot.plot(x,f(x),'g',label='Casos')
-    pyplot.plot(x,g(x),'r', label='Muertes')
-    pyplot.xlabel('Tiempo')
-    pyplot.ylabel('Cantidad')
-    pyplot.title('Pronostico a futuro')
+    pyplot.plot(x,f(x),'g',label='Cases')
+    pyplot.plot(x,g(x),'r', label='Deaths')
+    pyplot.xlabel('Time')
+    pyplot.ylabel('Amount')
+    pyplot.title('Future forecast')
     pyplot.legend()
     pyplot.axis(v)
     pyplot.grid()
