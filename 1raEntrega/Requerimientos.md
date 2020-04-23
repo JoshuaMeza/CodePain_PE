@@ -42,6 +42,8 @@ En la imagen se presenta cómo el usuario es necesario para que el sistema sepa 
 
 El sistema utiliza las bibliotecas *http.client* y *json* para obtener los casos confirmados y las defunciones totales, recuperadas de la API (Application Programming Interface) *[COVID-19](https://rapidapi.com/api-sports/api/covid-193?endpoint=apiendpoint_dfb9e52d-bd90-48ec-a571-8b78610a736d)* de api-sports.
 
-Para las tablas, el sistema utilizará la biblioteca *Mathpotlib* la cual ofrece una alternativa sencilla de usar y un aspecto visual agradable para el usuario.
+El algoritmo de regresion exponencial utiliza la biblioteca *Math* para el uso de logaritmos, dicho algoritmo es usado para generar la ecuación del comportamiento de los casos y de las muertes. La información fue recuperada de vídeos de youtube y de páginas matemáticas.
+
+Para las tablas, el sistema utiliza la biblioteca *Mathpotlib* que ofrece una alternativa sencilla de usar y agradable para la vista del usuario.
 
 Para la documentación, se utiliza la biblioteca *pydoc*.
