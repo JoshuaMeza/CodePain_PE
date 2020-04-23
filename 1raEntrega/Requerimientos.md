@@ -34,7 +34,7 @@ El usuario ingresa el país que desea consultar, después el sistema lo traduce 
 
 ## Diagrama de Casos de Uso
 
-https://github.com/JoshuaMeza/CodePain_PE/tree/master/Recursos/DiagramaCasosDeUso.jpg
+[Diagrama de Casos de Uso](https://github.com/JoshuaMeza/CodePain_PE/tree/master/Recursos/DiagramaCasosDeUso.jpg)
 
 En la imagen se presenta cómo el usuario es necesario para que el sistema sepa a que ruta acceder y recoger la información, para que posteriormente él la analice, la transfiera a tablas y la devuelva en una forma sencilla de entender para el usuario.
 
@@ -42,6 +42,6 @@ En la imagen se presenta cómo el usuario es necesario para que el sistema sepa 
 
 El sistema utiliza las bibliotecas *http.client* y *json* para obtener los casos confirmados y las defunciones totales, recuperadas de la API (Application Programming Interface) *[COVID-19](https://rapidapi.com/api-sports/api/covid-193?endpoint=apiendpoint_dfb9e52d-bd90-48ec-a571-8b78610a736d)* de api-sports.
 
-Para las tablas, el sistema utilizará la biblioteca *_________________________*.
+Para las tablas, el sistema utilizará la biblioteca *Mathpotlib* la cual ofrece una alternativa sencilla de usar y un aspecto visual agradable para el usuario.
 
 Para la documentación, se utiliza la biblioteca *pydoc*.

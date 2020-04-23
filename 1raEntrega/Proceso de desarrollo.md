@@ -6,7 +6,7 @@ Se utilizará el modelo basado en prototipos, ya que no se conoce a ciencia cier
 
 ## Herramientas
 
-- Hang Outs
+- Hangouts
 - Whats App
 - Slack
 - Visual Studio Code
@@ -36,7 +36,7 @@ A modo de llevar un registro de las actividades a realizar se usará una bitáco
 - Fecha
 - Actividad realizada
 - ¿Cuánto tiempo se usó para realizarla?
-- Comentarios (¿falta algo?, ¿necesita revisión?,etc)
+- Comentarios (¿falta algo?, ¿necesita revisión?, etc.)
 - [x] Se adjunta el enlace a la bitácora: 
  https://alumnosuady-my.sharepoint.com/:w:/g/personal/a16000959_alumnos_uady_mx/EWRmBJ-8S4xNubJXExbF7ccBhcJt0DwiPAms1QvGcGovKQ?e=A1PCji
  

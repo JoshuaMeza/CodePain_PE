@@ -1,6 +1,7 @@
 """
 Author Joshua Meza, Jonathan Gómez, and Irving Poot
-Version 3.0.0
+Date 21/04/2020
+Version 1.2.0
 Program who ask to the user a Country and returns the graphics of total cases and total deaths, the
 total numbers and the logarithmic ecuations that represents the increase of cases and deaths.
 """
@@ -143,6 +144,7 @@ def getAvalue(totalCases):
     A=(y/n)-B*(x/n)
     A=2.7182818284590452**A
     return A
+
 def getBvalue(totalCases):
     """
     Function that gets the B value of the y=A*e^(Bx) equation
@@ -208,6 +210,7 @@ def getCvalue(totalDeaths):
     A=(y/n)-B*(x/n)
     C=2.7182818284590452**A
     return C
+
 def getDvalue(totalDeaths):
     """
     Function that gets the D value of the y=C*e^(Dx) equation
@@ -244,6 +247,8 @@ def graphic(total,deaths):
     """
     Function that gets the first graphic
     Args:
+        totalCases (list): Saves the history of cases in integers
+        totalDeaths (list): Saves the history of deaths in integers
         parts (list): List of the two titles of the graphic
         slices (list): Parts of the graphic
         colors (list): Colors that the graphic will use
@@ -304,8 +309,8 @@ def main():
         totalCases (list): Saves the history of cases in integers
         totalDeaths (list): Saves the history of deaths in integers
         code (string): Code of the country for the api
-        total (int): Stores the first number of the array
-        
+        total (int): Stores the total amount of cases
+        deaths (int): Stores the total amount of deaths
     """
     totalCases=[]
     totalDeaths=[]
@@ -315,13 +320,14 @@ def main():
     totalDeaths.extend(getDeaths(code))
     total = totalCases[0]
     deaths = totalDeaths[0]
-    graphic(total, deaths)
+    
 
     #Process
     """
-    Obtains the values of the variables of the exponential equations
-    ...
+    Obtains the values of the variables of the exponential equations and generates the graphics
     Args:
+        total (int): Stores the total amount of cases
+        deaths (int): Stores the total amount of deaths
         A (float): A value of the y=A*e^(Bx) equation
         B (float): B value of the y=A*e^(Bx) equation
         C (float): C value of the y=C*e^(Dx) equation
@@ -331,8 +337,10 @@ def main():
     B=getBvalue(totalCases)
     C=getCvalue(totalDeaths)
     D=getDvalue(totalDeaths)
-    
+
+    graphic(total, deaths)
     graphic2(A, B, C, D)
+
     #Output
     """
     Return the list and equations

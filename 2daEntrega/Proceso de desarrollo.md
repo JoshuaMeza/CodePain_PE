@@ -8,7 +8,7 @@ Se utilizará el modelo basado en prototipos, ya que no se conoce a ciencia cier
 
 ## Herramientas
 
-- Hang Outs
+- Hangouts
 - Whats App
 - Slack
 - Visual Studio Code
@@ -38,7 +38,7 @@ A modo de llevar un registro de las actividades a realizar se usará una bitáco
 - Fecha
 - Actividad realizada
 - ¿Cuánto tiempo se usó para realizarla?
-- Comentarios (¿falta algo?, ¿necesita revisión?,etc)
+- Comentarios (¿falta algo?, ¿necesita revisión?, etc.)
 - [x] Se adjunta el enlace a la bitácora: 
  https://alumnosuady-my.sharepoint.com/:w:/g/personal/a16000959_alumnos_uady_mx/EWRmBJ-8S4xNubJXExbF7ccBhcJt0DwiPAms1QvGcGovKQ?e=A1PCji
  
@@ -60,8 +60,13 @@ Para evaluar el desempeño de los integrantes del proyecto se usará una plantil
 | Definición de objetivos | 18/04/20 | Todos | Objetivos |
 | Definición de requerimientos | 18/04/20 | Todos | Requerimientos de usuario, sistema, funcionales y no funcionales |
 | Redacción y corrección del repositorio | 18/04/20 | Todos | Repositorio |
-| Desarrollo del archivo "*Main*" | 20/04/20 | Todos | Prototipo 1 |
+| Desarrollo del archivo "*Main v1.0.0*" | 19/04/20 | Todos | Prototipo 1 |
+| Desarrollo del archivo "*Main v1.1.0*" | 20/04/20 | Todos | Prototipo 2 |
+| Desarrollo del archivo "*Main v1.2.0*" | 21/04/20 | Todos | Prototipo 3 |
 
 ## Repositorio
 
 - [x] https://github.com/JoshuaMeza/CodePain_PE
+
+
+## Mapeo

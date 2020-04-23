@@ -19,4 +19,12 @@
 
 ## Resúmen de Avances
 
-Durante el desarrollo del primer prototipo se investigaron múltiples API's, a lo que se encontró la que más se adaptaba a las necesidades del sistema. Tras investigar sobre las bibliotecas *json* y *http.client* se construyó el código de tal manera que se recuperen los datos específicos necesarios para la construcción de las gráficas, guardando los datos en forma de enteros en dos listas separadas. 
+Durante el desarrollo del primer prototipo se investigaron múltiples API's, a lo que se encontró la que más se adaptaba a las necesidades del sistema. Tras investigar sobre las bibliotecas *json* y *http.client* se construyó el código de tal manera que se recuperen los datos específicos necesarios para la construcción de las gráficas, guardando los datos en forma de enteros en dos listas separadas.
+
+## Mapeo
+
+## Resultados y Avances
+
+[Tabla 1](https://github.com/JoshuaMeza/CodePain_PE/tree/master/Recursos/Tabla1.JPG)
+[Tabla 2](https://github.com/JoshuaMeza/CodePain_PE/tree/master/Recursos/Tabla2.JPG)
+[Impresión](https://github.com/JoshuaMeza/CodePain_PE/tree/master/Recursos/Impresión.JPG)

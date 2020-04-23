@@ -1,5 +1,6 @@
 """
 Author Joshua Meza, Jonathan Gómez, and Irving Poot
+Date 19/04/2020
 Version 1.0.0
 Program who ask to the user a Country and returns the graphics of total cases and total deaths, the
 total numbers and the logarithmic ecuations that represents the increase of cases and deaths.
@@ -145,9 +146,10 @@ def main():
 
     #Process
     """
-    ...
+    Do the graphic
     Args:
-        ... (...): ...
+        total (int): total amount of cases
+        deaths (int): total amount of deaths
     """
     graphic(total, deaths)
 

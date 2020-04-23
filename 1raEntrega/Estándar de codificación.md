@@ -14,6 +14,7 @@
 ```python
 """
 Author Joshua Meza, Jonathan Gómez and Irving Poot
+Date dd/mm/yyyy
 Version 1.0.0
 Instruction here
 """
@@ -97,4 +98,6 @@ Pass: 1
 
 ## Herramienta de documentación
 
-Se utilizará la herramienta de *pydoc* para la documentación automática.
+Se utiliza la herramienta de *pydoc* para la documentación automática.
+
+- [Enlace para ver la documentación.](https://github.com/JoshuaMeza/CodePain_PE/tree/master/Recursos/Main.html)

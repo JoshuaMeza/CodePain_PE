@@ -1,6 +1,7 @@
 """
 Author Joshua Meza, Jonathan Gómez, and Irving Poot
-Version 2.0.0
+Date 20/04/2020
+Version 1.1.0
 Program who ask to the user a Country and returns the graphics of total cases and total deaths, the
 total numbers and the logarithmic ecuations that represents the increase of cases and deaths.
 """
@@ -140,6 +141,7 @@ def getAvalue(totalCases):
     A=(y/n)-B*(x/n)
     A=2.7182818284590452**A
     return A
+
 def getBvalue(totalCases):
     """
     Function that gets the B value of the y=A*e^(Bx) equation
@@ -205,6 +207,7 @@ def getCvalue(totalDeaths):
     A=(y/n)-B*(x/n)
     C=2.7182818284590452**A
     return C
+
 def getDvalue(totalDeaths):
     """
     Function that gets the D value of the y=C*e^(Dx) equation
@@ -235,7 +238,8 @@ def getDvalue(totalDeaths):
         x2=i**2+x2
         
     D=(n*(sum1)-x*y)/(n*x2-x**2)
-    return D        
+    return D 
+       
 def main():
     #Input
     """
