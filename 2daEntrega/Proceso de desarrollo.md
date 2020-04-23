@@ -1,7 +1,5 @@
 # Proceso de desarrollo
 
-# Proceso de desarrollo
-
 ## Metodología
 
 Se utilizará el modelo basado en prototipos, ya que no se conoce a ciencia cierta si todos los requerimientos ya están completamente definidos, así como tampoco si se están teniendo en cuenta todas las tecnologías necesarias para completarlo, por lo que se buscará adaptar y mejorar la calidad de los prototipos durante sus despliegues, así como acompletar los requerimientos y herramientas que serán necesarias.

@@ -11,10 +11,10 @@
 - Al seleccionar un país, el sistema:
     - [x] Despliega una tabla con los números de casos confirmados de Covid-19 a través del tiempo.
     - [x] Pone el número de casos confirmados totales de Covid-19 hasta la fecha.
-    - [x] Imprime el algoritmo que decribe el aumento de casos confirmados hasta la fecha.
+    - [x] Imprime el logaritmo que decribe el aumento de casos confirmados hasta la fecha.
     - [x] Despliega una tabla con los números de defunciones por Covid-19 a través del tiempo.
     - [x] Pone el número de defunciones totales por Covid-19 hasta la fecha.
-    - [x] Imprime el algoritmo que describe el aumento de defunciones hasta la fecha.
+    - [x] Imprime el logaritmo que describe el aumento de defunciones hasta la fecha.
 - [ ] Se coloca un botón que permita redireccionarse a la página principal durante cada consulta.
 
 ## Resúmen de Avances
@@ -23,16 +23,17 @@ Durante el desarrollo del primer prototipo se investigaron múltiples API's, a l
 
 Durante el desarrollo del segundo prototipo se investigaron algoritmos de regresiones exponenciales que sirvieran para generar las ecuaciones que modelan el comportamiento y predicción de los casos y muertes, usando logaritmos se buscaba obtener una ecuación del tipo *y=A*e^Bx, misma que es obtenida con la ayuda de la librería *Math* la cual fue usada para el empleo de la palabra reservada "log", los valores se almacenan en diferentes variables, las cuales permiten el fácil manejo de los datos de tipo float.
 
-Durante el desarrollo del tercer prototipo se investigó e implementó la librería "Matplotlib" que sirvió para generar la grafica de pastel que se muestran al principio y el grafico de lineas al final, que representan los casos y muertes así como el aumento pronosticado de los mismos respectivamente
-
+Durante el desarrollo del tercer prototipo se investigó e implementó la librería "Matplotlib" que sirvió para generar la gráfica de pastel que se muestran al principio y el gráfico de líneas al final, que representan los casos y muertes, así como el aumento pronosticado de los mismos respectivamente.
 
 ## Mapeo
 
 En las funciones *askCountry*, *getCases*, y *getDeaths* se cumplen los requerimientos relacionados con el servicio web, ya que se encargan de permitir al usuario elegir el país que desean consultar y al sistema de recopilar dicha información.
 
-En las funciones *getAvalue*, *getBvalue*, *getCvalue* y *getDvalue* cumplen con el requerimiento de imprimir el algoritmo que represente el crecimiento de casos y defunciones hasta la fecha.
+En las funciones *getAvalue*, *getBvalue*, *getCvalue* y *getDvalue* cumplen con el requerimiento de generar el algoritmo que represente el crecimiento de casos y defunciones hasta la fecha.
 
-En las funciones *graphic* y *graphic2* se cumplen los requerimientos relacionados con el despliegue de las gráficas de casos y defunciones.
+En las funciones *genGraphic* y *genGraphic2* se cumplen los requerimientos relacionados con el despliegue de las gráficas de casos y defunciones.
+
+En la función *printResults* se cumplen los requerimientos de imprimir los casos totales, las muertes totales y los logaritmos relacionados.
 
 ## Resultados y Avances
 
