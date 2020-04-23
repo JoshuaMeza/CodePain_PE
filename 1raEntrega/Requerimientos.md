@@ -44,6 +44,6 @@ El sistema utiliza las bibliotecas *http.client* y *json* para obtener los casos
 
 El algoritmo de regresion exponencial utiliza la biblioteca *Math* para el uso de logaritmos, dicho algoritmo es usado para generar la ecuación del comportamiento de los casos y de las muertes. La información fue recuperada de vídeos de youtube y de páginas matemáticas.
 
-Para las tablas, el sistema utiliza la biblioteca *Mathpotlib* que ofrece una alternativa sencilla de usar y agradable para la vista del usuario.
+Para las tablas, el sistema utiliza la mega-libreria *Mathpotlib* que puede producir todas las graficas que necesitaremos de una manera sencilla y agradable para la vista del usuario. La cual fue investigada en el mismo foro de la librería: "https://matplotlib.org/"
 
 Para la documentación, se utiliza la biblioteca *pydoc*.
