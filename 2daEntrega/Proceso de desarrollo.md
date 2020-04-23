@@ -63,10 +63,8 @@ Para evaluar el desempeño de los integrantes del proyecto se usará una plantil
 | Desarrollo del archivo "*Main v1.0.0*" | 19/04/20 | Todos | Prototipo 1 |
 | Desarrollo del archivo "*Main v1.1.0*" | 20/04/20 | Todos | Prototipo 2 |
 | Desarrollo del archivo "*Main v1.2.0*" | 21/04/20 | Todos | Prototipo 3 |
+| Mejora en la redacción del repositorio | 22/04/20 | Todos | Repositorio |
 
 ## Repositorio
 
 - [x] https://github.com/JoshuaMeza/CodePain_PE
-
-
-## Mapeo

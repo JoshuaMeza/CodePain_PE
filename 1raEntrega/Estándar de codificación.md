@@ -100,4 +100,4 @@ Pass: 1
 
 Se utiliza la herramienta de *pydoc* para la documentación automática.
 
-- [Enlace para ver la documentación.](https://github.com/JoshuaMeza/CodePain_PE/tree/master/Recursos/Main.html)
+- El archivo html se encuentra en la carpeta "Recursos".
