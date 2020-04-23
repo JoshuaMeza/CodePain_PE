@@ -26,10 +26,10 @@ El usuario ingresa el país que desea consultar, después el sistema lo traduce 
 - Al seleccionar un país, el sistema:
     - Despliega una tabla con los números de casos confirmados de Covid-19 a través del tiempo.
     - Pone el número de casos confirmados totales de Covid-19 hasta la fecha.
-    - Imprime el logaritmo que decribe el aumento de casos confirmados hasta la fecha.
+    - Imprime el algoritmo que decribe el aumento de casos confirmados hasta la fecha.
     - Despliega una tabla con los números de defunciones por Covid-19 a través del tiempo.
     - Pone el número de defunciones totales por Covid-19 hasta la fecha.
-    - Imprime el logartirmo que describe el aumento de defunciones hasta la fecha.
+    - Imprime el algoritmo que describe el aumento de defunciones hasta la fecha.
 - Se coloca un botón que permita redireccionarse a la página principal durante cada consulta.
 
 ## Diagrama de Casos de Uso

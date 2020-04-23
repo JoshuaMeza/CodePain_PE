@@ -11,10 +11,10 @@
 - Al seleccionar un país, el sistema:
     - [x] Despliega una tabla con los números de casos confirmados de Covid-19 a través del tiempo.
     - [x] Pone el número de casos confirmados totales de Covid-19 hasta la fecha.
-    - [x] Imprime el logaritmo que decribe el aumento de casos confirmados hasta la fecha.
+    - [x] Imprime el algoritmo que decribe el aumento de casos confirmados hasta la fecha.
     - [x] Despliega una tabla con los números de defunciones por Covid-19 a través del tiempo.
     - [x] Pone el número de defunciones totales por Covid-19 hasta la fecha.
-    - [x] Imprime el logartirmo que describe el aumento de defunciones hasta la fecha.
+    - [x] Imprime el algoritmo que describe el aumento de defunciones hasta la fecha.
 - [ ] Se coloca un botón que permita redireccionarse a la página principal durante cada consulta.
 
 ## Resúmen de Avances
@@ -29,7 +29,9 @@ Parte de Irving: _______________________________
 
 En las funciones *askCountry*, *getCases*, y *getDeaths* se cumplen los requerimientos relacionados con el servicio web, ya que se encargan de permitir al usuario elegir el país que desean consultar y al sistema de recopilar dicha información.
 
-En las funciones *getAvalue*, *...*, ...
+En las funciones *getAvalue*, *getBvalue*, *getCvalue* y *getDvalue* cumplen con el requerimiento de imprimir el algoritmo que represente el crecimiento de casos y defunciones hasta la fecha.
+
+En las funciones *graphic* y *graphic2* se cumplen los requerimientos relacionados con el despliegue de las gráficas de casos y defunciones.
 
 ## Resultados y Avances
 

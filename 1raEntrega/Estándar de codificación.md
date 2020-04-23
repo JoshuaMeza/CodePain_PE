@@ -100,4 +100,4 @@ Pass: 1
 
 Se utiliza la herramienta de *pydoc* para la documentación automática.
 
-- El archivo html se encuentra en la carpeta "Recursos".
+- [Enlace para descargar la documentación](https://github.com/JoshuaMeza/CodePain_PE/blob/master/Recursos/Documentaci%C3%B3nHTML.zip?raw=true)
