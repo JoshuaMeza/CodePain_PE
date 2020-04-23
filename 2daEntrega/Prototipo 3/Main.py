@@ -243,7 +243,7 @@ def getDvalue(totalDeaths):
     D=(n*(sum1)-x*y)/(n*x2-x**2)
     return D        
 
-def graphic(total,deaths):
+def genGraphic(total,deaths):
     """
     Function that gets the first graphic
     Args:
@@ -272,7 +272,7 @@ def graphic(total,deaths):
     pyplot.title('Graph of the data collected from the country')
     pyplot.show()
 
-def graphic2(A, B, C, D):
+def genGraphic2(A, B, C, D):
     """
     Function that gets the first graphic
     Args:
@@ -300,6 +300,24 @@ def graphic2(A, B, C, D):
     pyplot.axis(v)
     pyplot.grid()
     pyplot.show()
+
+def printResults(totalCases,totalDeaths,A,B,C,D):
+    """
+    Print the results
+    Args:
+        totalCases (list): Saves the history of cases in integers
+        totalDeaths (list): Saves the history of deaths in integers
+        A (float): A value of the y=A*e^(Bx) equation
+        B (float): B value of the y=A*e^(Bx) equation
+        C (float): C value of the y=C*e^(Dx) equation
+        D (float): D value of the y=C*e^(Dx) equation
+    Returns:
+        Nothing
+    """
+    print("Casos confirmados actuales: ", totalCases[0])
+    print("Defunciones totales hasta hoy: ", totalDeaths[0])
+    print("La ecuación que muestra el comportamiento de casos totales es y= ",A,"*e^(",B,"*x)")
+    print("La ecuación que muestra el comportamiento de muertes es y= ",C,"*e^(",D,"*x)")
 
 def main():
     #Input
@@ -338,8 +356,8 @@ def main():
     C=getCvalue(totalDeaths)
     D=getDvalue(totalDeaths)
 
-    graphic(total, deaths)
-    graphic2(A, B, C, D)
+    genGraphic(total, deaths)
+    genGraphic2(A, B, C, D)
 
     #Output
     """
@@ -352,10 +370,7 @@ def main():
         C (float): C value of the y=C*e^(Dx) equation
         D (float): D value of the y=C*e^(Dx) equation
     """
-    print("Casos confirmados actuales: ", totalCases[0])
-    print("Defunciones totales hasta hoy: ", totalDeaths[0])
-    print("La ecuación que muestra el comportamiento de casos totales es y= ",A,"*e^(",B,"*x)")
-    print("La ecuación que muestra el comportamiento de muertes es y= ",C,"*e^(",D,"*x)")
+    printResults(totalCases,totalDeaths,A,B,C,D)
 
     return 0
 
