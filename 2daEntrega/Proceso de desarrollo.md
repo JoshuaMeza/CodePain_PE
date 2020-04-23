@@ -34,11 +34,22 @@ Es indispensable que todo el equipo analice el avance de los demás en busca de 
 
 ### Bitácoras
 
-Insert Info Here!!!
-
+A modo de llevar un registro de las actividades a realizar se usará una bitácora sencilla pero eficiente, misma que contiene los siguientes apartados:
+- Fecha
+- Actividad realizada
+- ¿Cuánto tiempo se usó para realizarla?
+- Comentarios (¿falta algo?, ¿necesita revisión?,etc)
+- [x] Se adjunta el enlace a la bitácora: 
+ https://alumnosuady-my.sharepoint.com/:w:/g/personal/a16000959_alumnos_uady_mx/EWRmBJ-8S4xNubJXExbF7ccBhcJt0DwiPAms1QvGcGovKQ?e=A1PCji
+ 
 ## Métrica
 
-Insert Info Here!!!
+Para evaluar el desempeño de los integrantes del proyecto se usará una plantilla de excel, misma que contiene los siguientes puntos para tener en cuenta.
+-Cada integrante cuenta con su propia "sección", ya que básicamente el proyecto cuenta con 3 partes escenciales, el servicio web, el algoritmo logarítmico y la graficación del mismo. 
+- Es importante que cada miembro asista a las reuniones grupales mediante hang outs para dar a conocer sus avances, problemáticas y sugerencias. Este apartado califica a cuántas de las reuniones totales asistió.
+- Cada miembro debe documentar su sección del código y del proyecto ya que ellos tienen el conocimiento de lo que hicieron. Este apartado igual es calificado en la métrica.
+- [x] Se adjunta el enlace a la métrica:
+ https://alumnosuady-my.sharepoint.com/:x:/g/personal/a16000959_alumnos_uady_mx/ESS0Z0Blue5HkKZGh4JlJN4Btg6g_9zs8N6o0BO9OqPs3A?e=T3PnWE
 
 ## Calendario de Actividades
 
