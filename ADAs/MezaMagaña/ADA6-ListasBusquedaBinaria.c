@@ -1,6 +1,6 @@
 /*
     Author Joshua Immanuel Meza Magaña
-    Version 1.1.0
+    Version 1.1.1
         Changes:
             * Added function binSearch
             * Added function dateCompare
@@ -387,7 +387,7 @@ void printList(NodePTR actualNode){
         Nothing
     */
     if(actualNode==NULL){
-        printf("Empty list");
+        printSpecific(NULL);
         printf("-----------\n");
     }else{
         printf("List:\n");
@@ -408,10 +408,16 @@ void printSpecific(NodePTR actualNode){
     Returns:
         Nothing
     */
-    printf("-----------\n");
-    printf("Name: %s\n",actualNode->data.name);
-    printf("Date: %d/%d/%d\n",actualNode -> data.day.dd,actualNode -> data.day.mm,actualNode -> data.day.yyyy);
-    printf("Money: %.2f\n",actualNode->data.money);
+    if(actualNode==NULL){
+        printf("-----------\n");
+        printf("There's no results.\n");
+    }else{
+        printf("-----------\n");
+        printf("Name: %s\n",actualNode->data.name);
+        printf("Date: %d/%d/%d\n",actualNode -> data.day.dd,actualNode -> data.day.mm,actualNode -> data.day.yyyy);
+        printf("Money: %.2f\n",actualNode->data.money);
+    }
+    
 }
 
 int getCode(char action[7]){
@@ -460,6 +466,11 @@ void binSearch(NodePTR nptr){
 
     listAmount=countNodes(nptr);
     rigth=listAmount;
+    /*
+    It cant be done with pointers, theres no way to calculate and move easily the middle
+    NodePTR *right=nptr,*left=nptr;
+    rigth=*(rigth+listAmount)
+    */
 
     code=getCode(action); 
 
@@ -483,8 +494,7 @@ void binSearch(NodePTR nptr){
     }
     
     if(flag==0){
-        printf("-----------\n");
-        printf("This date does not exist.\n");
+        printSpecific(NULL); 
     }else{
         printSpecific(nptr);  
     }
