@@ -50,7 +50,7 @@ Para evaluar el desempeño de los integrantes del proyecto se usará una plantil
  https://alumnosuady-my.sharepoint.com/:x:/g/personal/a16000959_alumnos_uady_mx/ESS0Z0Blue5HkKZGh4JlJN4Btg6g_9zs8N6o0BO9OqPs3A?e=T3PnWE
  
 ## Reporte de avance individual por entrega
-**Irving:
+**Irving**:
 
 -Entrega 1:Participó en la creación del repositorio junto con su documentación, llevando a cabo el apartado "Mapeo de requerimientos". Se dio a la tarea de investigar cómo usar la librería de graficación de *Python* para su posterior implementación con base a la ecuación que se buscaba generar.
 
@@ -58,7 +58,7 @@ Para evaluar el desempeño de los integrantes del proyecto se usará una plantil
 
 -Entrega 3: Participó redactando la documentación del apartado de "Mapeo de requerimientos" e implementando una porción del código para la interfaz con la ayuda de Tkinter haciendo que las imágenes que anteriormente se mostraban al ejecutar el código ahora se guarden para que se usen en la interfaz visual.
 
-**Jonathan:
+**Jonathan**:
 
 -Entrega 1:Participó en la creación del repositorio junto con su documentación, llevando a cabo el apartado "Proceso de desarrollo". Elaboró la ppt para la primera entrega. Investigó el algoritmo de cómo generar ecuaciones exponenciales con la ayuda de recursos matemáticos, mismo que depende de los datos que se extrajeron del API.
 
@@ -66,7 +66,7 @@ Para evaluar el desempeño de los integrantes del proyecto se usará una plantil
 
 -Entrega 3: Participó redactando la documentación del apartado de "Proceso de desarrollo" e implementando una porción del código para la interfaz con la ayuda de Tkinter, generó el ejecutable .exe que serviría como prototipo final.
 
-**Joshua:
+**Joshua**:
 
 -Entrega 1:Participó en la creación del repositorio junto con su documentación, llevando a cabo el apartado "Descripción del proyecto" y haciendo una copia con las actividades que se encontraban en el repositorio pasado. Investigó y elaboró un código que nos permitía extraer los datos de la API que se usa para obtener la información del Covid-19.
 
