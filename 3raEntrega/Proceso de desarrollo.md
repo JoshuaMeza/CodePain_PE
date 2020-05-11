@@ -51,9 +51,19 @@ Para evaluar el desempeño de los integrantes del proyecto se usará una plantil
  
 ## Reporte de avance individual por entrega
 Jonathan:
--Entrega 1:
--Entrega 2:
--Entrega 3:
+
+-Entrega 1:Participó en la creación del repositorio junto con su documentación, llevando a cabo el apartado "Proceso de desarrollo". Elaboró la ppt para la primera entrega.
+
+-Entrega 2:Elaboró el segundo prototipo funcional, mismo que está mejor descrito en la sección de "Mapeo de requerimientos", básicamente la diferencia entre el primero y el segundo es que ahora el código produce y genera la ecuación exponencial que modela las defunciones y contagios del virus.
+
+-Entrega 3: Participó redactando la documentación del apartado de "Proceso de desarrollo" e implementando una porción del código para la interfaz con la ayuda de Tkinter.
+## Resúmen de Avances
+
+Durante el desarrollo del primer prototipo se investigaron múltiples API's, a lo que se encontró la que más se adaptaba a las necesidades del sistema. Tras investigar sobre las bibliotecas *json* y *http.client* se construyó el código de tal manera que se recuperen los datos específicos necesarios para la construcción de las gráficas, guardando los datos en forma de enteros en dos listas separadas.
+
+Durante el desarrollo del segundo prototipo se investigaron algoritmos de regresiones exponenciales que sirvieran para generar las ecuaciones que modelan el comportamiento y predicción de los casos y muertes, usando logaritmos se buscaba obtener una ecuación del tipo *y=A*e^Bx, misma que es obtenida con la ayuda de la librería *Math* la cual fue usada para el empleo de la palabra reservada "log", los valores se almacenan en diferentes variables, las cuales permiten el fácil manejo de los datos de tipo float.
+
+Durante el desarrollo del tercer prototipo se investigó e implementó la librería "Matplotlib" que sirvió para generar la gráfica de pastel que se muestran al principio y el gráfico de líneas al final, que representan los casos y muertes, así como el aumento pronosticado de los mismos respectivamente.
 
 ## Calendario de Actividades
 
