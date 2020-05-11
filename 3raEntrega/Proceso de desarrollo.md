@@ -50,20 +50,30 @@ Para evaluar el desempeño de los integrantes del proyecto se usará una plantil
  https://alumnosuady-my.sharepoint.com/:x:/g/personal/a16000959_alumnos_uady_mx/ESS0Z0Blue5HkKZGh4JlJN4Btg6g_9zs8N6o0BO9OqPs3A?e=T3PnWE
  
 ## Reporte de avance individual por entrega
-Jonathan:
+**Irving**:
 
--Entrega 1:Participó en la creación del repositorio junto con su documentación, llevando a cabo el apartado "Proceso de desarrollo". Elaboró la ppt para la primera entrega.
+-Entrega 1: Participó en la creación del repositorio junto con su documentación, llevando a cabo el apartado "Mapeo de requerimientos". Se dio a la tarea de investigar cómo usar la librería de graficación de *Python* para su posterior implementación con base a la ecuación que se buscaba generar.
 
--Entrega 2:Elaboró el segundo prototipo funcional, mismo que está mejor descrito en la sección de "Mapeo de requerimientos", básicamente la diferencia entre el primero y el segundo es que ahora el código produce y genera la ecuación exponencial que modela las defunciones y contagios del virus.
+-Entrega 2: Elaboró el tercer prototipo funcional, mismo que está mejor descrito en la sección de "Mapeo de requerimientos", básicamente la diferencia entre el segundo y el tercero es que ahora el código produce y genera las imágenes con las representaciones visuales de las gráficas que modelan las defunciones y contagios del virus.
 
--Entrega 3: Participó redactando la documentación del apartado de "Proceso de desarrollo" e implementando una porción del código para la interfaz con la ayuda de Tkinter.
-## Resúmen de Avances
+-Entrega 3: Participó redactando la documentación del apartado de "Mapeo de requerimientos" e implementando una porción del código para la interfaz con la ayuda de Tkinter haciendo que las imágenes que anteriormente se mostraban al ejecutar el código ahora se guarden para que se usen en la interfaz visual.
 
-Durante el desarrollo del primer prototipo se investigaron múltiples API's, a lo que se encontró la que más se adaptaba a las necesidades del sistema. Tras investigar sobre las bibliotecas *json* y *http.client* se construyó el código de tal manera que se recuperen los datos específicos necesarios para la construcción de las gráficas, guardando los datos en forma de enteros en dos listas separadas.
+**Jonathan**:
 
-Durante el desarrollo del segundo prototipo se investigaron algoritmos de regresiones exponenciales que sirvieran para generar las ecuaciones que modelan el comportamiento y predicción de los casos y muertes, usando logaritmos se buscaba obtener una ecuación del tipo *y=A*e^Bx, misma que es obtenida con la ayuda de la librería *Math* la cual fue usada para el empleo de la palabra reservada "log", los valores se almacenan en diferentes variables, las cuales permiten el fácil manejo de los datos de tipo float.
+-Entrega 1: Participó en la creación del repositorio junto con su documentación, llevando a cabo el apartado "Proceso de desarrollo". Elaboró la ppt para la primera entrega. Investigó el algoritmo de cómo generar ecuaciones exponenciales con la ayuda de recursos matemáticos, mismo que depende de los datos que se extrajeron del API.
 
-Durante el desarrollo del tercer prototipo se investigó e implementó la librería "Matplotlib" que sirvió para generar la gráfica de pastel que se muestran al principio y el gráfico de líneas al final, que representan los casos y muertes, así como el aumento pronosticado de los mismos respectivamente.
+-Entrega 2: Elaboró el segundo prototipo funcional, mismo que está mejor descrito en la sección de "Mapeo de requerimientos", básicamente la diferencia entre el primero y el segundo es que ahora el código produce y genera la ecuación exponencial que modela las defunciones y contagios del virus.
+
+-Entrega 3: Participó redactando la documentación del apartado de "Proceso de desarrollo" e implementando una porción del código para la interfaz con la ayuda de Tkinter, generó el ejecutable .exe que serviría como prototipo final.
+
+**Joshua**:
+
+-Entrega 1: Participó en la creación del repositorio junto con su documentación, llevando a cabo el apartado "Descripción del proyecto" y haciendo una copia con las actividades que se encontraban en el repositorio pasado. Investigó y elaboró un código que nos permitía extraer los datos de la API que se usa para obtener la información del Covid-19.
+
+-Entrega 2: Elaboró el primer prototipo funcional que está mejor descrito en la sección de "Mapeo de requerimientos", 
+básicamente lo que hace es obtener los datos de la API y quedarnos solo con los que nos interesa, casos y defunciones. 
+
+-Entrega 3: Participó redactando la documentación del código para su uso con *Pydoc*, investigó y capacitó al resto del equipo sobre la herramienta Tkinter, la cual es una librería de Python para interfaces visuales, además codificó la interfaz que se usa en el proyecto.
 
 ## Calendario de Actividades
 
@@ -78,6 +88,17 @@ Durante el desarrollo del tercer prototipo se investigó e implementó la librer
 | Desarrollo del archivo "*Main v1.1.0*" | 20/04/20 | Todos | Prototipo 2 |
 | Desarrollo del archivo "*Main v1.2.0*" | 21/04/20 | Todos | Prototipo 3 |
 | Mejora en la redacción del repositorio | 22/04/20 | Todos | Repositorio |
+| Desarrollo del archivo "*Main v1.3.0*" | 11/05/20 | Todos | Prototipo 4 |
+
+## Resumen de artefactos obtenidos por persona
+
+| Irving | Jonathan | Joshua |
+| -------| -------- | ------ | 
+| Tercer Prototipo | Segundo prototipo | Primer prototipo |
+| "Mapeo de requerimientos" | "Proceso de desarrollo" | "Descripción del proyecto" y "Pydoc" |
+| Cuarto y quinto prototipo | Cuarto y quinto prototipo | Cuarto y quinto prototipo |
+| ----- | Métrica | Bitácora |
+| Presentación ppt | Presentación ppt | Presentación ppt |
 
 ## Repositorio
 
