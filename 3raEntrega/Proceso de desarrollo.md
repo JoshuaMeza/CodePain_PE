@@ -48,6 +48,12 @@ Para evaluar el desempeño de los integrantes del proyecto se usará una plantil
 - Cada miembro debe documentar su sección del código y del proyecto ya que ellos tienen el conocimiento de lo que hicieron. Este apartado igual es calificado en la métrica.
 - [x] Se adjunta el enlace a la métrica:
  https://alumnosuady-my.sharepoint.com/:x:/g/personal/a16000959_alumnos_uady_mx/ESS0Z0Blue5HkKZGh4JlJN4Btg6g_9zs8N6o0BO9OqPs3A?e=T3PnWE
+ 
+## Reporte de avance individual por entrega
+Jonathan:
+-Entrega 1:
+-Entrega 2:
+-Entrega 3:
 
 ## Calendario de Actividades
 
