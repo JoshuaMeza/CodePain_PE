@@ -95,6 +95,9 @@ básicamente lo que hace es obtener los datos de la API y quedarnos solo con los
 | Irving | Jonathan | Joshua |
 | -------| -------- | ------ | 
 | Tercer Prototipo | Segundo prototipo | Primer prototipo |
+| "Mapeo de requerimientos" | "Proceso de desarrollo" | "Descripción del proyecto" y "Pydoc" |
+| Cuarto y quinto prototipo" |
+
 
 
 ## Repositorio
