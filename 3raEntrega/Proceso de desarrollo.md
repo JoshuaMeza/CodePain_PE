@@ -90,6 +90,13 @@ básicamente lo que hace es obtener los datos de la API y quedarnos solo con los
 | Mejora en la redacción del repositorio | 22/04/20 | Todos | Repositorio |
 | Desarrollo del archivo "*Main v1.3.0*" | 11/05/20 | Todos | Prototipo 4 |
 
+## Resumen de artefactos obtenidos por persona
+
+| Irving | Jonathan | Joshua |
+| -------| -------- | ------ | 
+| Tercer Prototipo | Segundo prototipo | Primer prototipo |
+
+
 ## Repositorio
 
 - [x] https://github.com/JoshuaMeza/CodePain_PE
