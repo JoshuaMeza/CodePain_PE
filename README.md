@@ -13,6 +13,6 @@ Dr. Edgar Cambranes Martínez :space_invader:
 
 :file_folder: [2da Entrega](https://github.com/JoshuaMeza/CodePain_PE/tree/master/2daEntrega): Contiene todos los documentos creados por cada integrante del equipo
 
-:file_folder: [3era Entrega](https://github.com/JoshuaMeza/CodePain_PE/tree/master/3eraEntrega): Contiene todos los documentos creados por cada integrante del equipo
+:file_folder: [3era Entrega](https://github.com/JoshuaMeza/CodePain_PE/tree/master/3raEntrega): Contiene todos los documentos creados por cada integrante del equipo
 
 :file_folder: [ADAs](https://github.com/JoshuaMeza/CodePain_PE/tree/master/ADAs): Códigos trabajados en clase online 
