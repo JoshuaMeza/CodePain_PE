@@ -298,34 +298,6 @@ def genGraphic2(A, B, C, D):
     pyplot.grid()
     #pyplot.show()
 
-def printResults(totalCases,totalDeaths,A,B,C,D):
-    """
-    Print the results
-    Args:
-        totalCases (list): Saves the history of cases in integers
-        totalDeaths (list): Saves the history of deaths in integers
-        A (float): A value of the y=A*e^(Bx) equation
-        B (float): B value of the y=A*e^(Bx) equation
-        C (float): C value of the y=C*e^(Dx) equation
-        D (float): D value of the y=C*e^(Dx) equation
-    Returns:
-        Nothing
-    """
-    print("Casos confirmados actuales: ", totalCases[0])
-    print("Defunciones totales hasta hoy: ", totalDeaths[0])
-    print("La ecuación que muestra el comportamiento de casos totales es y= ",A,"*e^(",B,"*x)")
-    print("La ecuación que muestra el comportamiento de muertes es y= ",C,"*e^(",D,"*x)")
-
-def onClose():
-    """
-    Helps the program to close
-    Args:
-        root (tkinter): Main visual frame
-    Returns:
-        Nothing
-    """
-    root.destroy()
-
 def main():
     #Input
     """
@@ -336,13 +308,6 @@ def main():
         code (string): Code of the country for the api
         total (int): Stores the total amount of cases
         deaths (int): Stores the total amount of deaths
-        root (tkinter): Visual root
-        codeL (tkinter): Function that saves like string the user's selection
-        imgIcon (tkinter): References the custom icon of the app
-        top (tkinter): Top frame
-        mid (tkinter): Middle frame
-        bot (tkinter): Bottom frame
-        listCountries (tkinter): Box with countries
     """
     totalCases=[]
     totalDeaths=[]
@@ -353,7 +318,6 @@ def main():
     totalDeaths.extend(getDeaths(code))
     total = totalCases[0]
     deaths = totalDeaths[0]
-    
     #Process
     """
     Obtains the values of the variables of the exponential equations and generates the graphics
@@ -370,28 +334,58 @@ def main():
     C=getCvalue(totalDeaths)
     D=getDvalue(totalDeaths)
 
-    genGraphic(total, deaths)
-    genGraphic2(A, B, C, D)
+    #genGraphic(total, deaths)
+    #genGraphic2(A, B, C, D)
 
     #Output
     """
     Return the list and equations
     Args:
-        totalCases (list): Saves the history of cases in integers
-        totalDeaths (list): Saves the history of deaths in integers
+        total (int): Total amount of cases
+        deaths (int): Total amount of deaths
         A (float): A value of the y=A*e^(Bx) equation
         B (float): B value of the y=A*e^(Bx) equation
         C (float): C value of the y=C*e^(Dx) equation
         D (float): D value of the y=C*e^(Dx) equation
+        casesBox (tkinter): Box of confrimed cases
+        deathBox (tkinter): Box of deaths
+        eqCasBox (tkinter): Box of the cases equation
+        eqDetBox (tkinter): Box of the deaths equation 
     """
-    printResults(totalCases,totalDeaths,A,B,C,D)
+    casesBox.delete(0)
+    casesBox.insert(0,total)
+    eqCasBox.delete(0)
+    output=str("y= {}*e^({}*x)".format(A,B))
+    eqCasBox.insert(0,output)
+    deathBox.delete(0)
+    deathBox.insert(0,deaths)
+    eqDetBox.delete(0)
+    output=str("y= {}*e^({}*x)".format(C,D))
+    eqDetBox.insert(0,output)
 
     return 0
 
 if __name__=='__main__':
+    """
+    Args:
+        root (tkinter): Visual root
+        codeL (tkinter): Function that saves like string the user's selection
+        imgIcon (tkinter): References the custom icon of the app
+        top (tkinter): Top frame
+        mid (tkinter): Middle frame
+        bot (tkinter): Bottom frame
+        listCountries (tkinter): Box with countries
+        casesBox (tkinter): Box of confrimed cases
+        deathBox (tkinter): Box of deaths
+        eqCasBox (tkinter): Box of the cases equation
+        eqDetBox (tkinter): Box of the deaths equation
+        scrollbarCas (tkinter): Scrollbar of the box of confirmed cases
+        scrollbarDet (tkinter): Scrollbar of the box of deaths
+    """
     #Visual Aspect
     root=Tk()
-    codeL = StringVar()
+    codeL=StringVar()
+    
 
     root.title("Coronavirus Graphics")
     root.geometry("465x400")
@@ -407,24 +401,52 @@ if __name__=='__main__':
     mid=Frame(root,width=465,height=320)
     mid.pack(anchor="center")
     mid.config(bg="white")
+    
+    scrollbarCas=Scrollbar(mid)
+    scrollbarDet=Scrollbar(mid)
 
     bot=Frame(root,width=465,height=30)
     bot.pack(anchor="s")
     bot.config(bg="#D5D7D3")
 
     Label(top,text="Welcome! To see a graphic select the country and press 'Submit'.",font=('bold',12),justify="center",bg="#AEE8D7").place(x=6,y=12)
-    Label(mid,text="Avalaible countries:",font=('bold',10),justify="left",bg="white").place(x=20,y=40)
+    Label(mid,text="Avaliable countries:",font=('bold',10),justify="left",bg="white").place(x=15,y=40)
     Label(bot,text="Property of Code-Pain Team",font=('bold',8),justify="left",bg="#D5D7D3").place(x=0,y=6)
 
     listCountries=Listbox(mid, height=3, highlightcolor="blue")
     listCountries.insert(1, "Mexico")
     listCountries.insert(2, "United States")
     listCountries.insert(3, "Canada")
-    listCountries.place(x=130,y=26)
+    listCountries.place(x=140,y=26)
 
     Button(mid,text="Submit",justify="center",activebackground="blue",command=main).place(x=300,y=40)
 
-    root.protocol("WM_DELETE_WINDOW",onClose)
+    Label(mid,text="Confirmed cases:",font=('bold',10),justify="left",bg="white").place(x=15,y=90)
+    casesBox=Listbox(mid,width=15,height=1)
+    casesBox.place(x=130,y=90)
+
+    Label(mid,text="Cases equation:",font=('bold',10),justify="left",bg="white").place(x=15,y=115)
+    eqCasBox=Listbox(mid,width=15,height=1,xscrollcommand=scrollbarCas.set)
+    eqCasBox.place(x=130,y=115)
+
+    Label(mid,text="Actual deaths:",font=('bold',10),justify="left",bg="white").place(x=230,y=90)
+    deathBox=Listbox(mid,width=15,height=1)
+    deathBox.place(x=335,y=90)
+
+    Label(mid,text="Deaths equation:",font=('bold',10),justify="left",bg="white").place(x=230,y=115)
+    eqDetBox=Listbox(mid,width=15,height=1,xscrollcommand=scrollbarDet.set)
+    eqDetBox.place(x=335,y=115)
+
+    scrollbarCas.place(x=130,y=140,width=94)
+    scrollbarCas.config(command=eqCasBox.xview,orient=HORIZONTAL)
+
+    scrollbarDet.place(x=335,y=140,width=94)
+    scrollbarDet.config(command=eqDetBox.xview,orient=HORIZONTAL)
+
+    #Helps the program to close
+    root.protocol("WM_DELETE_WINDOW",root.destroy)
 
     #Keeps the visual aspect open   
     root.mainloop()
+
+#DOCUMENTACION PYDOC [ENLACE]
