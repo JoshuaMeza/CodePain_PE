@@ -268,8 +268,7 @@ def genGraphic(total,deaths):
     
     pyplot.axis('equal')
     pyplot.title('Graph of the data collected from the country')
-    pyplot.savefig('Graphic1.png')
-    shutil.move("Graphic1.png", "../Prototipo 4/resources")
+    pyplot.savefig('resources/Graphic.png')
 
 def genGraphic2(A, B, C, D):
     """
@@ -298,8 +297,7 @@ def genGraphic2(A, B, C, D):
     pyplot.legend()
     pyplot.axis(v)
     pyplot.grid()
-    pyplot.savefig('Graphic2.png')
-    shutil.move("Graphic2.png", "../Prototipo 4/resources")
+    pyplot.savefig('resources/Graphic2.png')
 
 def main():
     #Input
