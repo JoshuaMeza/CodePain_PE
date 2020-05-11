@@ -52,25 +52,25 @@ Para evaluar el desempeño de los integrantes del proyecto se usará una plantil
 ## Reporte de avance individual por entrega
 **Irving**:
 
--Entrega 1:Participó en la creación del repositorio junto con su documentación, llevando a cabo el apartado "Mapeo de requerimientos". Se dio a la tarea de investigar cómo usar la librería de graficación de *Python* para su posterior implementación con base a la ecuación que se buscaba generar.
+-Entrega 1: Participó en la creación del repositorio junto con su documentación, llevando a cabo el apartado "Mapeo de requerimientos". Se dio a la tarea de investigar cómo usar la librería de graficación de *Python* para su posterior implementación con base a la ecuación que se buscaba generar.
 
--Entrega 2:Elaboró el tercer prototipo funcional, mismo que está mejor descrito en la sección de "Mapeo de requerimientos", básicamente la diferencia entre el segundo y el tercero es que ahora el código produce y genera las imágenes con las representaciones visuales de las gráficas que modelan las defunciones y contagios del virus.
+-Entrega 2: Elaboró el tercer prototipo funcional, mismo que está mejor descrito en la sección de "Mapeo de requerimientos", básicamente la diferencia entre el segundo y el tercero es que ahora el código produce y genera las imágenes con las representaciones visuales de las gráficas que modelan las defunciones y contagios del virus.
 
 -Entrega 3: Participó redactando la documentación del apartado de "Mapeo de requerimientos" e implementando una porción del código para la interfaz con la ayuda de Tkinter haciendo que las imágenes que anteriormente se mostraban al ejecutar el código ahora se guarden para que se usen en la interfaz visual.
 
 **Jonathan**:
 
--Entrega 1:Participó en la creación del repositorio junto con su documentación, llevando a cabo el apartado "Proceso de desarrollo". Elaboró la ppt para la primera entrega. Investigó el algoritmo de cómo generar ecuaciones exponenciales con la ayuda de recursos matemáticos, mismo que depende de los datos que se extrajeron del API.
+-Entrega 1: Participó en la creación del repositorio junto con su documentación, llevando a cabo el apartado "Proceso de desarrollo". Elaboró la ppt para la primera entrega. Investigó el algoritmo de cómo generar ecuaciones exponenciales con la ayuda de recursos matemáticos, mismo que depende de los datos que se extrajeron del API.
 
--Entrega 2:Elaboró el segundo prototipo funcional, mismo que está mejor descrito en la sección de "Mapeo de requerimientos", básicamente la diferencia entre el primero y el segundo es que ahora el código produce y genera la ecuación exponencial que modela las defunciones y contagios del virus.
+-Entrega 2: Elaboró el segundo prototipo funcional, mismo que está mejor descrito en la sección de "Mapeo de requerimientos", básicamente la diferencia entre el primero y el segundo es que ahora el código produce y genera la ecuación exponencial que modela las defunciones y contagios del virus.
 
 -Entrega 3: Participó redactando la documentación del apartado de "Proceso de desarrollo" e implementando una porción del código para la interfaz con la ayuda de Tkinter, generó el ejecutable .exe que serviría como prototipo final.
 
 **Joshua**:
 
--Entrega 1:Participó en la creación del repositorio junto con su documentación, llevando a cabo el apartado "Descripción del proyecto" y haciendo una copia con las actividades que se encontraban en el repositorio pasado. Investigó y elaboró un código que nos permitía extraer los datos de la API que se usa para obtener la información del Covid-19.
+-Entrega 1: Participó en la creación del repositorio junto con su documentación, llevando a cabo el apartado "Descripción del proyecto" y haciendo una copia con las actividades que se encontraban en el repositorio pasado. Investigó y elaboró un código que nos permitía extraer los datos de la API que se usa para obtener la información del Covid-19.
 
--Entrega 2:Elaboró el primer prototipo funcional que está mejor descrito en la sección de "Mapeo de requerimientos", 
+-Entrega 2: Elaboró el primer prototipo funcional que está mejor descrito en la sección de "Mapeo de requerimientos", 
 básicamente lo que hace es obtener los datos de la API y quedarnos solo con los que nos interesa, casos y defunciones. 
 
 -Entrega 3: Participó redactando la documentación del código para su uso con *Pydoc*, investigó y capacitó al resto del equipo sobre la herramienta Tkinter, la cual es una librería de Python para interfaces visuales, además codificó la interfaz que se usa en el proyecto.
@@ -88,6 +88,7 @@ básicamente lo que hace es obtener los datos de la API y quedarnos solo con los
 | Desarrollo del archivo "*Main v1.1.0*" | 20/04/20 | Todos | Prototipo 2 |
 | Desarrollo del archivo "*Main v1.2.0*" | 21/04/20 | Todos | Prototipo 3 |
 | Mejora en la redacción del repositorio | 22/04/20 | Todos | Repositorio |
+| Desarrollo del archivo "*Main v1.3.0*" | 11/05/20 | Todos | Prototipo 4 |
 
 ## Repositorio
 
