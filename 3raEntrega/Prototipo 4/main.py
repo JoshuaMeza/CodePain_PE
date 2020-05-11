@@ -267,7 +267,7 @@ def genGraphic(total,deaths):
     
     pyplot.axis('equal')
     pyplot.title('Graph of the data collected from the country')
-    #pyplot.show()
+    pyplot.savefig('Graphic1.png')
 
 def genGraphic2(A, B, C, D):
     """
@@ -296,7 +296,7 @@ def genGraphic2(A, B, C, D):
     pyplot.legend()
     pyplot.axis(v)
     pyplot.grid()
-    #pyplot.show()
+    pyplot.savefig('Graphic2.png')
 
 def printResults(totalCases,totalDeaths,A,B,C,D):
     """
