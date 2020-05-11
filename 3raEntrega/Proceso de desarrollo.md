@@ -96,12 +96,8 @@ básicamente lo que hace es obtener los datos de la API y quedarnos solo con los
 | -------| -------- | ------ | 
 | Tercer Prototipo | Segundo prototipo | Primer prototipo |
 | "Mapeo de requerimientos" | "Proceso de desarrollo" | "Descripción del proyecto" y "Pydoc" |
-| "Cuarto y quinto prototipo" | "Cuarto y quinto prototipo" | "Cuarto y quinto prototipo" |
-
-
-
-
-
+| Cuarto y quinto prototipo | Cuarto y quinto prototipo | Cuarto y quinto prototipo |
+| Presentación ppt | Métrica | Bitácora |
 ## Repositorio
 
 - [x] https://github.com/JoshuaMeza/CodePain_PE
