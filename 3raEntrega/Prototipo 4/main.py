@@ -16,6 +16,7 @@ import math
 from matplotlib import pyplot
 import numpy as np
 from math import exp
+import shutil
 from tkinter import * #Ignore warnings
 
 #Functions
@@ -268,6 +269,7 @@ def genGraphic(total,deaths):
     pyplot.axis('equal')
     pyplot.title('Graph of the data collected from the country')
     pyplot.savefig('Graphic1.png')
+    shutil.move("Graphic1.png", "../Prototipo 4/resources")
 
 def genGraphic2(A, B, C, D):
     """
@@ -297,6 +299,7 @@ def genGraphic2(A, B, C, D):
     pyplot.axis(v)
     pyplot.grid()
     pyplot.savefig('Graphic2.png')
+    shutil.move("Graphic2.png", "../Prototipo 4/resources")
 
 def main():
     #Input
@@ -334,8 +337,8 @@ def main():
     C=getCvalue(totalDeaths)
     D=getDvalue(totalDeaths)
 
-    #genGraphic(total, deaths)
-    #genGraphic2(A, B, C, D)
+    genGraphic(total, deaths)
+    genGraphic2(A, B, C, D)
 
     #Output
     """
