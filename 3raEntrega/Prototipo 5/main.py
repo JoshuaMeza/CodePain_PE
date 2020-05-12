@@ -16,6 +16,7 @@ import math
 from matplotlib import pyplot
 import numpy as np
 from math import exp
+import shutil
 from tkinter import * #Ignore warnings
 from PIL import Image,ImageTk
 
@@ -254,6 +255,7 @@ def genGraphic(total,deaths):
     Returns:
         The First Graphic
     """
+
     parts = ('Cases', 'Deaths')
     slices = (total, deaths)
     colors = ('green', 'red')
@@ -267,7 +269,7 @@ def genGraphic(total,deaths):
     
     pyplot.axis('equal')
     pyplot.title('Graph of the data collected from the country')
-    pyplot.savefig('Graphic1.png')
+    pyplot.savefig('resources/Graphic.png', bbox_inches='tight')
 
 def genGraphic2(A, B, C, D):
     """
@@ -296,7 +298,7 @@ def genGraphic2(A, B, C, D):
     pyplot.legend()
     pyplot.axis(v)
     pyplot.grid()
-    pyplot.savefig('Graphic2.png')
+    pyplot.savefig('resources/Graphic2.png', bbox_inches='tight')
 
 def main():
     #Input
@@ -336,8 +338,8 @@ def main():
     C=getCvalue(totalDeaths)
     D=getDvalue(totalDeaths)
 
-    #genGraphic(total, deaths)
-    #genGraphic2(A, B, C, D)
+    genGraphic(total, deaths)
+    genGraphic2(A, B, C, D)
 
     #Output
     """
@@ -353,6 +355,10 @@ def main():
         deathBox (tkinter): Box of deaths
         eqCasBox (tkinter): Box of the cases equation
         eqDetBox (tkinter): Box of the deaths equation 
+        load (PIL): Load the image
+        render (PIL): Render the image
+        table1 (PIL): Table of cases and deaths
+        table2 (PIL): Table of equations
     """
     casesBox.delete(0)
     casesBox.insert(0,total)
@@ -364,6 +370,20 @@ def main():
     eqDetBox.delete(0)
     output=str("y= {}*e^({}*x)".format(C,D))
     eqDetBox.insert(0,output)
+
+    load=Image.open('resources/Graphic.png')
+    load=load.resize((160, 160), Image.ANTIALIAS)
+    render=ImageTk.PhotoImage(load)
+    table1=Label(mid,image=render)
+    table1.image=render
+    table1.place(x=30,y=180)
+
+    load=Image.open('resources/Graphic2.png')
+    load=load.resize((160, 160), Image.ANTIALIAS)
+    render=ImageTk.PhotoImage(load)
+    table2=Label(mid,image=render)
+    table2.image=render
+    table2.place(x=265,y=180)
 
     return 0
 
@@ -384,6 +404,10 @@ if __name__=='__main__':
         eqDetBox (tkinter): Box of the deaths equation
         scrollbarCas (tkinter): Scrollbar of the box of confirmed cases
         scrollbarDet (tkinter): Scrollbar of the box of deaths
+        load (PIL): Load the image
+        render (PIL): Render the image
+        table1 (PIL): Table of cases and deaths
+        table2 (PIL): Table of equations
     """
     #Visual Aspect
     root=Tk()
@@ -391,7 +415,7 @@ if __name__=='__main__':
     
 
     root.title("Coronavirus Graphics")
-    root.geometry("465x440")
+    root.geometry("465x450")
 
     imgIcon = PhotoImage(file='resources/icon.gif')
     root.tk.call('wm','iconphoto', root._w, imgIcon)
@@ -401,7 +425,7 @@ if __name__=='__main__':
     top.pack(anchor="n")
     top.config(bg="#AEE8D7")
 
-    mid=Frame(root,width=465,height=360)
+    mid=Frame(root,width=465,height=370)
     mid.pack(anchor="center")
     mid.config(bg="white")
     
@@ -447,13 +471,17 @@ if __name__=='__main__':
     scrollbarDet.config(command=eqDetBox.xview,orient=HORIZONTAL)
 
     load=Image.open('resources/block.png')
+    load=load.resize((160, 160), Image.ANTIALIAS)
     render=ImageTk.PhotoImage(load)
     table1=Label(mid,image=render)
     table1.image=render
     table1.place(x=30,y=180)
     table2=Label(mid,image=render)
     table2.image=render
-    table2.place(x=245,y=180)
+    table2.place(x=265,y=180)
+
+    Label(mid,text="Table of cases and deaths",font=('bold',10),justify="left",bg="white").place(x=34,y=345)
+    Label(mid,text="Table of equations",font=('bold',10),justify="left",bg="white").place(x=292,y=345)
 
     #Helps the program to close
     root.protocol("WM_DELETE_WINDOW",root.destroy)
