@@ -31,3 +31,8 @@ Igualmente en la funcion "main" se cumplen los requerimentos de imprimir los dat
 
 ## Resultado y Avances
 
+[Interfaz de inicio](https://github.com/JoshuaMeza/CodePain_PE/blob/master/Recursos/Interfaz%201.png)
+
+[Interfaz de salida](https://github.com/JoshuaMeza/CodePain_PE/blob/master/Recursos/Interfaz%20con%20resultados.png)
+
+[Carpeta de recursos con graficas](https://github.com/JoshuaMeza/CodePain_PE/tree/master/3raEntrega/Prototipo%204/resources)
