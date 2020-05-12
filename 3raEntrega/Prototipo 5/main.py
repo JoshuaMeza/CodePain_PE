@@ -256,7 +256,6 @@ def genGraphic(total,deaths):
     Returns:
         The First Graphic
     """
-    
     pyplot.clf()
     parts = ('Cases', 'Deaths')
     slices = (total, deaths)
@@ -273,8 +272,6 @@ def genGraphic(total,deaths):
     pyplot.axis('equal')
     pyplot.title('Graph of the data collected from the country')
     pyplot.savefig('resources/Graphic.png', bbox_inches='tight')
-    
-
 
 def genGraphic2(A, B, C, D):
     """
@@ -306,10 +303,6 @@ def genGraphic2(A, B, C, D):
     pyplot.axis(v)
     pyplot.grid()
     pyplot.savefig('resources/Graphic2.png', bbox_inches='tight')
-    
-
-
-
 
 def main():
     #Input
@@ -396,8 +389,6 @@ def main():
     table2.image=render
     table2.place(x=265,y=180)
 
-
-
     return 0
 
 if __name__=='__main__':
@@ -425,7 +416,6 @@ if __name__=='__main__':
     #Visual Aspect
     root=Tk()
     codeL=StringVar()
-    
 
     root.title("Coronavirus Graphics")
     root.geometry("465x450")
