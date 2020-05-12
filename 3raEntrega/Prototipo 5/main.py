@@ -267,6 +267,7 @@ def genGraphic(total,deaths):
     for tex in text:
         tex.set_color('white')
     
+    pyplot.ion()
     pyplot.axis('equal')
     pyplot.title('Graph of the data collected from the country')
     pyplot.savefig('resources/Graphic.png', bbox_inches='tight')
@@ -289,6 +290,7 @@ def genGraphic2(A, B, C, D):
     g= lambda x: C*(e**(D*x))
     v = [-25, 25, 0, 25]
     x =np.linspace(-25,25,100)
+    pyplot.ion()
     pyplot.rcParams['toolbar'] = 'None'
     pyplot.plot(x,f(x),'g',label='Cases')
     pyplot.plot(x,g(x),'r', label='Deaths')
