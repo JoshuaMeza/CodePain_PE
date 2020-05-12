@@ -1,14 +1,14 @@
 """
 Author Joshua Meza, Jonathan Gómez, and Irving Poot
-Date 10/05/2020
-Version 1.3.0
+Date 11/05/2020
+Version 1.3.1
     Changes:
         - Added visual interface.
 Program who ask to the user a Country and returns the graphics of total cases and total deaths, the
 total numbers and the logarithmic ecuations that represents the increase of cases and deaths.
     Special requirements:
-        - Install the neccesary libraries (http.client,matplotlib,tkinter) by using 'pip install <library>'.
-        - Place the cmd on the 'Prototipo 4' folder before executing, the custom icon requires it.
+        - Install the neccesary libraries (http.client,matplotlib,pillow) by using 'pip install <library>'.
+        - Place the cmd on the 'Prototipo 4' folder before executing, the resources need it.
 """
 import http.client 
 import json 
@@ -17,6 +17,7 @@ from matplotlib import pyplot
 import numpy as np
 from math import exp
 from tkinter import * #Ignore warnings
+from PIL import Image,ImageTk
 
 #Functions
 def askCountry(codeL):
@@ -253,7 +254,6 @@ def genGraphic(total,deaths):
     Returns:
         The First Graphic
     """
-
     parts = ('Cases', 'Deaths')
     slices = (total, deaths)
     colors = ('green', 'red')
@@ -306,6 +306,7 @@ def main():
         totalCases (list): Saves the history of cases in integers
         totalDeaths (list): Saves the history of deaths in integers
         code (string): Code of the country for the api
+        codeL (tkinter): Selected option
         total (int): Stores the total amount of cases
         deaths (int): Stores the total amount of deaths
     """
@@ -318,6 +319,7 @@ def main():
     totalDeaths.extend(getDeaths(code))
     total = totalCases[0]
     deaths = totalDeaths[0]
+
     #Process
     """
     Obtains the values of the variables of the exponential equations and generates the graphics
@@ -367,6 +369,7 @@ def main():
 
 if __name__=='__main__':
     """
+    Instruction to inicialize the program, contains the visual aspect to avoid errors
     Args:
         root (tkinter): Visual root
         codeL (tkinter): Function that saves like string the user's selection
@@ -388,7 +391,7 @@ if __name__=='__main__':
     
 
     root.title("Coronavirus Graphics")
-    root.geometry("465x400")
+    root.geometry("465x440")
 
     imgIcon = PhotoImage(file='resources/icon.gif')
     root.tk.call('wm','iconphoto', root._w, imgIcon)
@@ -398,7 +401,7 @@ if __name__=='__main__':
     top.pack(anchor="n")
     top.config(bg="#AEE8D7")
 
-    mid=Frame(root,width=465,height=320)
+    mid=Frame(root,width=465,height=360)
     mid.pack(anchor="center")
     mid.config(bg="white")
     
@@ -443,10 +446,19 @@ if __name__=='__main__':
     scrollbarDet.place(x=335,y=140,width=94)
     scrollbarDet.config(command=eqDetBox.xview,orient=HORIZONTAL)
 
+    load=Image.open('resources/block.png')
+    render=ImageTk.PhotoImage(load)
+    table1=Label(mid,image=render)
+    table1.image=render
+    table1.place(x=30,y=180)
+    table2=Label(mid,image=render)
+    table2.image=render
+    table2.place(x=245,y=180)
+
     #Helps the program to close
     root.protocol("WM_DELETE_WINDOW",root.destroy)
 
     #Keeps the visual aspect open   
     root.mainloop()
 
-#DOCUMENTACION PYDOC [ENLACE]
+#DOCUMENTACION PYDOC [https://github.com/JoshuaMeza/CodePain_PE/blob/master/Recursos/Documentaci%C3%B3nHTML.zip?raw=true]
