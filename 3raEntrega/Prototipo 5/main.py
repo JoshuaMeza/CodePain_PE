@@ -19,6 +19,7 @@ from math import exp
 import shutil
 from tkinter import * #Ignore warnings
 from PIL import Image,ImageTk
+from os import remove
 
 #Functions
 def askCountry(codeL):
@@ -302,6 +303,17 @@ def genGraphic2(A, B, C, D):
     pyplot.grid()
     pyplot.savefig('resources/Graphic2.png', bbox_inches='tight')
 
+def deleteGraphSecure():
+    """
+    Remove the generated graphics to avoid bugs
+    Args:
+        Nothing
+    Returns:
+        Nothing
+    """
+    remove("resources/Graphic.png")
+    remove("resources/Graphic2.png")
+
 def main():
     #Input
     """
@@ -386,6 +398,8 @@ def main():
     table2=Label(mid,image=render)
     table2.image=render
     table2.place(x=265,y=180)
+
+    deleteGraphSecure()
 
     return 0
 
