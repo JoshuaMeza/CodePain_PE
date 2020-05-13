@@ -488,6 +488,11 @@ if __name__=='__main__':
     #Helps the program to close
     root.protocol("WM_DELETE_WINDOW",root.destroy)
 
+    #Ventanas modales
+    #https://ic1800a2011.wordpress.com/2013/06/21/027-ejemplo-de-una-ventana-modal-en-tkinter-python-3-x/
+    #Manejar excepciones con try
+    #https://entrenamiento-python-basico.readthedocs.io/es/latest/leccion9/errores.html
+
     #Keeps the visual aspect open   
     root.mainloop()
 
