@@ -54,7 +54,9 @@ Para la documentación, se utiliza la biblioteca *pydoc*.
 
 ## Requerimientos Especiales para el Usuario
 
-Si se desea ejecutar el archivo *main.py* en vez del *CoronaGraphics.exe*, es necesario realizar las siguientes acciones:
+1. Para ejecutar el *CoronaGraphics.exe*, favor de no sacar el archivo de su carpeta de origen, para evitar errores de ejecución.
+
+2. Si se desea ejecutar el archivo *main.py* en vez del *CoronaGraphics.exe*, es necesario realizar las siguientes acciones:
 
 - Tener instalado en su computador *Python* y todas las bibliotecas utilizadas en el desarrollo del producto final (*Extras fuera de python: htttp.client, Matpotlib y Pillow*). 
     - Para instalar las bibliotecas extras, realizar: *pip install <...>*
