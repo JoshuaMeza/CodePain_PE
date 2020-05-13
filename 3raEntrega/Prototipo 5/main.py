@@ -8,7 +8,7 @@ Program who ask to the user a Country and returns the graphics of total cases an
 total numbers and the logarithmic ecuations that represents the increase of cases and deaths.
     Special requirements:
         - Install the neccesary libraries (http.client,matplotlib,pillow) by using 'pip install <library>'.
-        - Place the cmd on the 'Prototipo 4' folder before executing, the resources need it.
+        - Place the cmd on the 'Prototipo 5' folder before executing, the resources need it.
 """
 import http.client 
 import json 
@@ -19,7 +19,6 @@ from math import exp
 import shutil
 from tkinter import * #Ignore warnings
 from PIL import Image,ImageTk
-from os import remove
 
 #Functions
 def askCountry(codeL):
@@ -420,7 +419,7 @@ if __name__=='__main__':
     root.title("Coronavirus Graphics")
     root.geometry("465x450")
 
-    imgIcon = PhotoImage(file='resources/icon.gif')
+    imgIcon = PhotoImage(file='resources/Icon.gif')
     root.tk.call('wm','iconphoto', root._w, imgIcon)
     root.resizable(0, 0)
 
@@ -473,7 +472,7 @@ if __name__=='__main__':
     scrollbarDet.place(x=335,y=140,width=94)
     scrollbarDet.config(command=eqDetBox.xview,orient=HORIZONTAL)
 
-    load=Image.open('resources/block.png')
+    load=Image.open('resources/Block.png')
     load=load.resize((160, 160), Image.ANTIALIAS)
     render=ImageTk.PhotoImage(load)
     table1=Label(mid,image=render)
