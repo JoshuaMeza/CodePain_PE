@@ -1,3 +1,9 @@
+"""
+Author Joshua Meza, Jonathan Gómez, and Irving Poot
+Date 20/05/2020
+Version 1.0.0
+Program who generates the equations graphic.
+"""
 from matplotlib import pyplot
 from math import exp
 import numpy as np

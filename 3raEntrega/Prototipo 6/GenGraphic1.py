@@ -1,3 +1,9 @@
+"""
+Author Joshua Meza, Jonathan Gómez, and Irving Poot
+Date 20/05/2020
+Version 1.0.0
+Program who generates the confirmed cases vs actual deaths graphic.
+"""
 from matplotlib import pyplot
 
 def genGraphic1(casesAmount,deathsAmount):

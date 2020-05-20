@@ -1,8 +1,87 @@
 """
-Instruction to inicialize the program
+Author Joshua Meza, Jonathan Gómez, and Irving Poot
+Date 20/05/2020
+Version 1.4.0
+Program who ask to the user a Country and returns the graphics of total cases and total deaths, the
+total numbers and the logarithmic equations that represents the increase of cases and deaths.
+    Special requirements:
+        - Install the neccesary libraries (http.client,matplotlib) by using 'pip install <library>'.
+        - Place the cmd on the folder before executing.
+"""
+from tkinter import *
+from PutValues import *
+from GenGraphic1 import *
+from GenGraphic2 import *
+
+def placeBoxes():
+    """
+    Get the request of the user, place the info on the boxes and save the necessary data for the grapphics
+    Args:
+        casesAmount (list): Total amount of confirmed cases
+        deathsAmount (list): Total amount of deaths
+        A (list): A value of the y=A*e^(Bx) equation
+        B (list): B value of the y=A*e^(Bx) equation
+        C (list): C value of the y=C*e^(Dx) equation
+        D (list): D value of the y=D*e^(Dx) equation
+        codeL (tkinter): Function that saves like string the user's selection
+    Returns:
+        Values of cases, deaths and pieces for the equation
+    """
+    casesAmount.clear()
+    deathsAmount.clear()
+    A.clear()
+    B.clear()
+    C.clear()
+    D.clear()
+    codeL=listCountries.get(listCountries.curselection())
+    values(casesBox,eqCasBox,deathBox,eqDetBox,codeL,casesAmount,deathsAmount,A,B,C,D)
+
+def genGraphCases():
+    """
+    Generate the graphic of confirmed cases vs deaths
+    Args:
+        casesAmount (list): Total amount of confirmed cases
+        deathsAmount (list): Total amount of deaths
+    Returns:
+        Window of the confirmed cases vs deaths
+    """
+    genGraphic1(casesAmount,deathsAmount)
+
+def genGraphEquation():
+    """
+    Generate the graphic of the equations
+    Args:
+        A (list): A value of the y=A*e^(Bx) equation
+        B (list): B value of the y=A*e^(Bx) equation
+        C (list): C value of the y=C*e^(Dx) equation
+        D (list): D value of the y=D*e^(Dx) equation
+    Returns:
+        Window of the equations
+    """
+    genGraphic2(A,B,C,D)
+
+#Memory for graphics
+"""
+Variables to pass by reference the data of the boxes and graphics
 Args:
-    casesAmount (int): Total amount of confirmed cases
-    deathsAmount (int): Total amount of deaths
+    casesAmount (list): Total amount of confirmed cases
+    deathsAmount (list): Total amount of deaths
+    A (list): A value of the y=A*e^(Bx) equation
+    B (list): B value of the y=A*e^(Bx) equation
+    C (list): C value of the y=C*e^(Dx) equation
+    D (list): D value of the y=D*e^(Dx) equation
+"""
+casesAmount=[0]
+deathsAmount=[0]
+A=[0]
+B=[0]
+C=[0]
+D=[0]
+
+#Visual Aspect
+"""
+Visual aspect of the program
+Args:
     root (tkinter): Visual root
     codeL (tkinter): Function that saves like string the user's selection
     imgIcon (tkinter): References the custom icon of the app
@@ -16,41 +95,7 @@ Args:
     eqDetBox (tkinter): Box of the deaths equation
     scrollbarCas (tkinter): Scrollbar of the box of confirmed cases
     scrollbarDet (tkinter): Scrollbar of the box of deaths
-    load (PIL): Load the image
-    render (PIL): Render the image
-    table1 (PIL): Table of cases and deaths
-    table2 (PIL): Table of equations
 """
-from tkinter import *
-from PutValues import *
-from GenGraphic1 import *
-from GenGraphic2 import *
-
-def placeBoxes():
-    casesAmount.clear()
-    deathsAmount.clear()
-    A.clear()
-    B.clear()
-    C.clear()
-    D.clear()
-    codeL=listCountries.get(listCountries.curselection())
-    values(casesBox,eqCasBox,deathBox,eqDetBox,codeL,casesAmount,deathsAmount,A,B,C,D)
-
-def genGraphCases():
-    genGraphic1(casesAmount,deathsAmount)
-
-def genGraphDeaths():
-    genGraphic2(A,B,C,D)
-
-#Memory for graphics
-casesAmount=[0]
-deathsAmount=[0]
-A=[0]
-B=[0]
-C=[0]
-D=[0]
-
-#Visual Aspect
 root=Tk()
 codeL=StringVar()
 
@@ -114,10 +159,12 @@ Label(mid,text="Generate table of confirmed cases and deaths",font=('bold',10),j
 Button(mid,text="Generate",justify="center",activebackground="blue",command=genGraphCases).place(x=200,y=205)
 
 Label(mid,text="Generate table of equations",font=('bold',10),justify="left",bg="white").place(x=148,y=240)
-Button(mid,text="Generate",justify="center",activebackground="blue",command=genGraphDeaths).place(x=200,y=265)
+Button(mid,text="Generate",justify="center",activebackground="blue",command=genGraphEquation).place(x=200,y=265)
 
 #Helps the program to close
 root.protocol("WM_DELETE_WINDOW",root.destroy)
 
 #Keeps the visual aspect open   
 root.mainloop()
+
+#DOCUMENTATION PYDOC [https://github.com/JoshuaMeza/CodePain_PE/blob/master/Recursos/Documentaci%C3%B3nHTML.zip?raw=true]

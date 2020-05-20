@@ -90,9 +90,15 @@ básicamente lo que hace es obtener los datos de la API y quedarnos solo con los
 | Mejora en la redacción del repositorio | 22/04/20 | Todos | Repositorio |
 | Desarrollo del archivo "*Main v1.3.0*" | 10/05/20 | Todos | Prototipo 4 |
 | Desarrollo del archivo "*Main v1.3.1*" | 11/05/20 | Todos | Prototipo 5 |
-| Despliegue del producto final | 13/05/20 | Todos | Producto final |
 | Mejora en la redacción del repositorio | 13/05/20 | Todos | Repositorio |
 | Actualización de la documentación | 13/05/20 | Todos | Documentación |
+| Desarrollo del archivo "*Main v1.4.0*" | 20/05/20 | Todos | Prototipo 6 |
+| Desarrollo del archivo "*GenGraphic1 v1.0.0*" | 20/05/20 | Todos | Prototipo 6 |
+| Desarrollo del archivo "*GenGraphic2 v1.0.0*" | 20/05/20 | Todos | Prototipo 6 |
+| Desarrollo del archivo "*PutValues v1.0.0*" | 20/05/20 | Todos | Prototipo 6 |
+| Mejora en la redacción del repositorio | 20/05/20 | Todos | Repositorio |
+| Actualización de la documentación | 20/05/20 | Todos | Documentación |
+| Despliegue del producto final | 20/05/20 | Todos | Producto final |
 
 ## Resumen de artefactos obtenidos por persona
 

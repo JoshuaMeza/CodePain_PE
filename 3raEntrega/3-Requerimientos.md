@@ -46,9 +46,7 @@ El algoritmo de regresión exponencial utiliza la biblioteca *Math* para el uso 
 
 Para las tablas, el sistema utiliza la librería *Numpy* y la mega-libreria *Matpotlib* que puede producir todas las gráficas que necesitaremos de una manera sencilla y agradable para la vista del usuario. La cual fue investigada en el mismo foro de la librería: "https://matplotlib.org/".
 
-Para colocar las imágenes generadas en la carpeta "resources" el sistema utiliza la librería *shutil*.
-
-Para el aspecto visual de la aplicación el sistema utiliza las librerías *Tkinter* y *Pillow*, las cuales sirven para dar estructura y colocar imágenes respectivamente.
+Para el aspecto visual de la aplicación el sistema utiliza la librería *Tkinter*, el cual permite colocar las secciones, colores, botones y cajas presentes en la interfaz.
 
 Para la documentación, se utiliza la biblioteca *pydoc*.
 
@@ -58,8 +56,8 @@ Para la documentación, se utiliza la biblioteca *pydoc*.
 
 2. Si se desea ejecutar el archivo *main.py* en vez del *CoronaGraphics.exe*, es necesario realizar las siguientes acciones:
 
-- Tener instalado en su computador *Python* y todas las bibliotecas utilizadas en el desarrollo del producto final (*Extras fuera de python: htttp.client, Matpotlib y Pillow*). 
+- Tener instalado en su computador *Python* y todas las bibliotecas utilizadas en el desarrollo del producto final (*Extras fuera de python: htttp.client y Matpotlib*). 
     - Para instalar las bibliotecas extras, realizar: *pip install <...>*
 - Colocar el cmd (línea de comandos) en la carpeta dónde se encuentra el archivo.
 
-En caso de no realizar las medidas anteriormente explicadas, el archivo no se va a ejecutar.
+En caso de no realizar las medidas anteriormente explicadas, el archivo no se ejecutará correctamente.

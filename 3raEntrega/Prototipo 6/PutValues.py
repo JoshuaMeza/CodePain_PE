@@ -1,3 +1,9 @@
+"""
+Author Joshua Meza, Jonathan Gómez, and Irving Poot
+Date 20/05/2020
+Version 1.0.0
+Program who recieve data form the api and place it on the box.
+"""
 import http.client 
 import json 
 import math
