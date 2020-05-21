@@ -98,7 +98,7 @@ básicamente lo que hace es obtener los datos de la API y quedarnos solo con los
 | Desarrollo del archivo "*PutValues v1.0.0*" | 20/05/20 | Todos | Prototipo 6 |
 | Mejora en la redacción del repositorio | 20/05/20 | Todos | Repositorio |
 | Actualización de la documentación | 20/05/20 | Todos | Documentación |
-| Despliegue del producto final | 20/05/20 | Todos | Producto final |
+| Despliegue del producto final | 21/05/20 | Todos | Producto final |
 
 ## Resumen de artefactos obtenidos por persona
 

@@ -30,7 +30,7 @@ En el **quinto prototipo** se añadió la función de poder mostrar las gráfica
 
 En el **sexto prototipo** se dividió en cuatro archivos el sistema, se redujo el número de bibliotecas necesarias en el programa, se cambió el sistema de generación de gráficas para que fueran ventanas emergentes independientes, se modificó el aspecto visual del Prototipo 5 y se solucionaron los dos errores de ejecución presentes en el prototipo anterior que impedían la correcta generación de gráficas y la finalización del proceso. 
 
-En el **producto final** se creó y convirtió el archivo *main.py version 1.4.0* en *CoronaGraphics.exe*, se facilitó la utilización de la aplicación y se le proporcionó un ícono personalizado al ejecutor.
+En el **producto final** se creó y convirtió el archivo *main.py version 1.4.0* en *main.exe*, se facilitó la utilización de la aplicación al convertir en ejecutable el programa y se le proporcionó un ícono personalizado al ejecutor.
 
 ## Mapeo
 
@@ -49,6 +49,6 @@ En el archivo *Main* se encuentra redactado el aspecto visual. En esta zona se c
 
 [Interfaz de salida](https://github.com/JoshuaMeza/CodePain_PE/blob/master/Recursos/InterfazResultados.png)
 
-[Gráfica 1](https://github.com/JoshuaMeza/CodePain_PE/blob/master/Recursos/Grafica1.png)
+[Gráfica 1](https://github.com/JoshuaMeza/CodePain_PE/blob/master/Recursos/Grafica1.PNG)
 
-[Gráfica 2](https://github.com/JoshuaMeza/CodePain_PE/blob/master/Recursos/Grafica2.png)
+[Gráfica 2](https://github.com/JoshuaMeza/CodePain_PE/blob/master/Recursos/Grafica2.PNG)
