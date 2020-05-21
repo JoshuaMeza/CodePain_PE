@@ -105,8 +105,8 @@ básicamente lo que hace es obtener los datos de la API y quedarnos solo con los
 | Irving | Jonathan | Joshua |
 | -------| -------- | ------ | 
 | Tercer Prototipo | Segundo prototipo | Primer prototipo |
-| "Mapeo de requerimientos" | "Proceso de desarrollo" | "Descripción del proyecto" y "Pydoc" |
-| Cuarto y quinto prototipo | Cuarto y quinto prototipo | Cuarto y quinto prototipo |
+| "Mapeo de requerimientos" | "Proceso de desarrollo" | "Descripción del proyecto" |
+| Cuarto, quinto y sexto prototipo | Cuarto, quinto y sexto prototipo | Cuarto, quinto y sexto prototipo |
 | ----- | Métrica | Bitácora |
 | Presentación ppt | Presentación ppt | Presentación ppt |
 
