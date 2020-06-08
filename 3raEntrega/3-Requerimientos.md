@@ -52,9 +52,9 @@ Para la documentación, se utiliza la biblioteca *pydoc*.
 
 ## Requerimientos Especiales para el Usuario
 
-1. Para ejecutar el *main.exe*, favor de no sacar el archivo de su carpeta de origen, para evitar errores de ejecución.
+1. Para ejecutar el *CodePain_Coronavirus.exe*, favor de no sacar el archivo de su carpeta de origen, para evitar errores de ejecución.
 
-2. Si se desea ejecutar el archivo *main.py version 1.4.0* en vez del *main.exe*, es necesario realizar las siguientes acciones:
+2. Si se desea ejecutar el archivo *main.py version 1.4.0* en vez del *CodePain_Coronavirus.exe*, es necesario realizar las siguientes acciones:
 
 - Tener instalado en su computador *Python* y todas las bibliotecas utilizadas en el desarrollo del producto final (*Extras fuera de python: http.client y Matpotlib*). 
     - Para instalar las bibliotecas extras, realizar: *pip install <...>*
