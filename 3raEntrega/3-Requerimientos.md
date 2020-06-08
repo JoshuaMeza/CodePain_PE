@@ -56,7 +56,7 @@ Para la documentación, se utiliza la biblioteca *pydoc*.
 
 2. Si se desea ejecutar el archivo *main.py version 1.4.0* en vez del *main.exe*, es necesario realizar las siguientes acciones:
 
-- Tener instalado en su computador *Python* y todas las bibliotecas utilizadas en el desarrollo del producto final (*Extras fuera de python: htttp.client y Matpotlib*). 
+- Tener instalado en su computador *Python* y todas las bibliotecas utilizadas en el desarrollo del producto final (*Extras fuera de python: http.client y Matpotlib*). 
     - Para instalar las bibliotecas extras, realizar: *pip install <...>*
 - Colocar el cmd (línea de comandos) en la carpeta dónde se encuentra el archivo.
 
